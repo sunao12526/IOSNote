@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2609FCC9A54DDE9130393CFB /* Pods_IOSNote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25FD2DB689BA5C841970CF22 /* Pods_IOSNote.framework */; };
 		AFE434062D34DC370052AC3B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE434052D34DC370052AC3B /* AppDelegate.m */; };
 		AFE434092D34DC370052AC3B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE434082D34DC370052AC3B /* SceneDelegate.m */; };
 		AFE4340C2D34DC370052AC3B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE4340B2D34DC370052AC3B /* ViewController.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25FD2DB689BA5C841970CF22 /* Pods_IOSNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOSNote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		396D56D09ABC225797F5DEBA /* Pods-IOSNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSNote.debug.xcconfig"; path = "Target Support Files/Pods-IOSNote/Pods-IOSNote.debug.xcconfig"; sourceTree = "<group>"; };
 		AFE434012D34DC370052AC3B /* IOSNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE434042D34DC370052AC3B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AFE434052D34DC370052AC3B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +32,7 @@
 		AFE434132D34DC3D0052AC3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFE434152D34DC3D0052AC3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFE434162D34DC3D0052AC3B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B4248FF50B9F2B704DEEA888 /* Pods-IOSNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSNote.release.xcconfig"; path = "Target Support Files/Pods-IOSNote/Pods-IOSNote.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +40,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2609FCC9A54DDE9130393CFB /* Pods_IOSNote.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3328701F78301B16F860F3BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25FD2DB689BA5C841970CF22 /* Pods_IOSNote.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AFE433F82D34DC370052AC3B = {
 			isa = PBXGroup;
 			children = (
 				AFE434032D34DC370052AC3B /* IOSNote */,
 				AFE434022D34DC370052AC3B /* Products */,
+				C56253D8E0CEEAD23FA60506 /* Pods */,
+				3328701F78301B16F860F3BE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +91,15 @@
 			path = IOSNote;
 			sourceTree = "<group>";
 		};
+		C56253D8E0CEEAD23FA60506 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				396D56D09ABC225797F5DEBA /* Pods-IOSNote.debug.xcconfig */,
+				B4248FF50B9F2B704DEEA888 /* Pods-IOSNote.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFE4341A2D34DC3D0052AC3B /* Build configuration list for PBXNativeTarget "IOSNote" */;
 			buildPhases = (
+				8D37E2E7C6CDD25AB41854C7 /* [CP] Check Pods Manifest.lock */,
 				AFE433FD2D34DC370052AC3B /* Sources */,
 				AFE433FE2D34DC370052AC3B /* Frameworks */,
 				AFE433FF2D34DC370052AC3B /* Resources */,
+				89DD69BC8717FB3B52385CAD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,6 +166,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		89DD69BC8717FB3B52385CAD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IOSNote/Pods-IOSNote-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IOSNote/Pods-IOSNote-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IOSNote/Pods-IOSNote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D37E2E7C6CDD25AB41854C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IOSNote-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AFE433FD2D34DC370052AC3B /* Sources */ = {
@@ -293,12 +361,14 @@
 		};
 		AFE4341B2D34DC3D0052AC3B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 396D56D09ABC225797F5DEBA /* Pods-IOSNote.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8392A5FS3K;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IOSNote/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -306,6 +376,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,12 +391,14 @@
 		};
 		AFE4341C2D34DC3D0052AC3B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4248FF50B9F2B704DEEA888 /* Pods-IOSNote.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8392A5FS3K;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IOSNote/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -333,6 +406,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
