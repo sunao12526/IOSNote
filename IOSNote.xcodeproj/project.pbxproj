@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2609FCC9A54DDE9130393CFB /* Pods_IOSNote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25FD2DB689BA5C841970CF22 /* Pods_IOSNote.framework */; };
+		AF04EBD02D3761BF00EB8CD8 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = AF04EBCF2D3761BF00EB8CD8 /* ViewController1.m */; };
+		AF04EBD32D3765E500EB8CD8 /* AView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF04EBD22D3765E500EB8CD8 /* AView.m */; };
 		AFE434062D34DC370052AC3B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE434052D34DC370052AC3B /* AppDelegate.m */; };
 		AFE434092D34DC370052AC3B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE434082D34DC370052AC3B /* SceneDelegate.m */; };
 		AFE4340C2D34DC370052AC3B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE4340B2D34DC370052AC3B /* ViewController.m */; };
@@ -21,6 +23,10 @@
 /* Begin PBXFileReference section */
 		25FD2DB689BA5C841970CF22 /* Pods_IOSNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOSNote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		396D56D09ABC225797F5DEBA /* Pods-IOSNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSNote.debug.xcconfig"; path = "Target Support Files/Pods-IOSNote/Pods-IOSNote.debug.xcconfig"; sourceTree = "<group>"; };
+		AF04EBCE2D3761BF00EB8CD8 /* ViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
+		AF04EBCF2D3761BF00EB8CD8 /* ViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
+		AF04EBD12D3765E500EB8CD8 /* AView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AView.h; sourceTree = "<group>"; };
+		AF04EBD22D3765E500EB8CD8 /* AView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AView.m; sourceTree = "<group>"; };
 		AFE434012D34DC370052AC3B /* IOSNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE434042D34DC370052AC3B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AFE434052D34DC370052AC3B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -92,6 +98,10 @@
 				AFE434122D34DC3D0052AC3B /* LaunchScreen.storyboard */,
 				AFE434152D34DC3D0052AC3B /* Info.plist */,
 				AFE434162D34DC3D0052AC3B /* main.m */,
+				AF04EBCE2D3761BF00EB8CD8 /* ViewController1.h */,
+				AF04EBCF2D3761BF00EB8CD8 /* ViewController1.m */,
+				AF04EBD12D3765E500EB8CD8 /* AView.h */,
+				AF04EBD22D3765E500EB8CD8 /* AView.m */,
 			);
 			path = IOSNote;
 			sourceTree = "<group>";
@@ -221,6 +231,8 @@
 			files = (
 				AFE4341F2D34F2F60052AC3B /* CrashHandler.m in Sources */,
 				AFE4340C2D34DC370052AC3B /* ViewController.m in Sources */,
+				AF04EBD02D3761BF00EB8CD8 /* ViewController1.m in Sources */,
+				AF04EBD32D3765E500EB8CD8 /* AView.m in Sources */,
 				AFE434062D34DC370052AC3B /* AppDelegate.m in Sources */,
 				AFE434172D34DC3D0052AC3B /* main.m in Sources */,
 				AFE434092D34DC370052AC3B /* SceneDelegate.m in Sources */,
@@ -373,7 +385,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 8392A5FS3K;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IOSNote/Info.plist;
@@ -382,13 +394,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = sunao.IOSNote;
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.demo.test123;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -403,7 +415,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 8392A5FS3K;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IOSNote/Info.plist;
@@ -412,13 +424,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = sunao.IOSNote;
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.demo.test123;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";

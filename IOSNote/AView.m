@@ -16,5 +16,9 @@
     // Drawing code
 }
 */
-
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [super touchesBegan:touches withEvent:event];
+    NSLog(@"1111");
+}
 @end
