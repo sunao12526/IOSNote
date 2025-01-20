@@ -6,7 +6,7 @@
 //
 
 #import "ViewController.h"
-
+#import "AObject.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
     NSArray *_dataArray;
@@ -35,8 +35,36 @@
                    @"mqtt",
                    @"Objection",
     ];
+    [self test_NSError];
 }
 
+//NSError 内存泄漏的 case
+- (void)test_NSError {
+    for (NSInteger index = 0; index <= 100; index++) {
+        NSString *str;
+        str = [NSString stringWithFormat:@"welcome to zoom:%ld", index];
+        str = [str stringByAppendingString:@" user"];
+        NSError * error = NULL;
+//        NSError * __autoreleasing tmp = error; 编译器会替换成&temp
+        if ([self isZoomUserWithUserID:index error:&error]) {
+            // error = tmp;编译器会添加替换error成tmp;
+            NSLog(@"%@", str);
+        } else {
+            NSLog(@"%@", error);
+        }
+    }
+}
+- (BOOL)isZoomUserWithUserID:(NSInteger)userID error:(NSError **)error
+{
+    @autoreleasepool {
+        NSString *errorMessage = [[NSString alloc] initWithFormat:@"the user is not zoom user"];
+        if (userID == 100) {
+            *error = [NSError errorWithDomain:@"com.test" code:userID userInfo:@{NSLocalizedDescriptionKey: errorMessage}];
+            return NO;
+        }
+    }
+    return YES;
+}
 
 # pragma mark - tableview
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

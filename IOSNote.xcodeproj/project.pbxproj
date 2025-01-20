@@ -10,6 +10,7 @@
 		2609FCC9A54DDE9130393CFB /* Pods_IOSNote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25FD2DB689BA5C841970CF22 /* Pods_IOSNote.framework */; };
 		AF04EBD02D3761BF00EB8CD8 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = AF04EBCF2D3761BF00EB8CD8 /* ViewController1.m */; };
 		AF04EBD32D3765E500EB8CD8 /* AView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF04EBD22D3765E500EB8CD8 /* AView.m */; };
+		AF04EBD62D3E3AD900EB8CD8 /* AObject.m in Sources */ = {isa = PBXBuildFile; fileRef = AF04EBD52D3E3AD900EB8CD8 /* AObject.m */; };
 		AFE434062D34DC370052AC3B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE434052D34DC370052AC3B /* AppDelegate.m */; };
 		AFE434092D34DC370052AC3B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE434082D34DC370052AC3B /* SceneDelegate.m */; };
 		AFE4340C2D34DC370052AC3B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE4340B2D34DC370052AC3B /* ViewController.m */; };
@@ -27,6 +28,8 @@
 		AF04EBCF2D3761BF00EB8CD8 /* ViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
 		AF04EBD12D3765E500EB8CD8 /* AView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AView.h; sourceTree = "<group>"; };
 		AF04EBD22D3765E500EB8CD8 /* AView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AView.m; sourceTree = "<group>"; };
+		AF04EBD42D3E3AD900EB8CD8 /* AObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AObject.h; sourceTree = "<group>"; };
+		AF04EBD52D3E3AD900EB8CD8 /* AObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AObject.m; sourceTree = "<group>"; };
 		AFE434012D34DC370052AC3B /* IOSNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE434042D34DC370052AC3B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AFE434052D34DC370052AC3B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -102,6 +105,8 @@
 				AF04EBCF2D3761BF00EB8CD8 /* ViewController1.m */,
 				AF04EBD12D3765E500EB8CD8 /* AView.h */,
 				AF04EBD22D3765E500EB8CD8 /* AView.m */,
+				AF04EBD42D3E3AD900EB8CD8 /* AObject.h */,
+				AF04EBD52D3E3AD900EB8CD8 /* AObject.m */,
 			);
 			path = IOSNote;
 			sourceTree = "<group>";
@@ -233,6 +238,7 @@
 				AFE4340C2D34DC370052AC3B /* ViewController.m in Sources */,
 				AF04EBD02D3761BF00EB8CD8 /* ViewController1.m in Sources */,
 				AF04EBD32D3765E500EB8CD8 /* AView.m in Sources */,
+				AF04EBD62D3E3AD900EB8CD8 /* AObject.m in Sources */,
 				AFE434062D34DC370052AC3B /* AppDelegate.m in Sources */,
 				AFE434172D34DC3D0052AC3B /* main.m in Sources */,
 				AFE434092D34DC370052AC3B /* SceneDelegate.m in Sources */,

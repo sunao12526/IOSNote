@@ -8,5 +8,9 @@
 #import "AObject.h"
 
 @implementation AObject
-
+-(void)dealloc
+{
+    NSLog(@"%@ %ld", self,CFGetRetainCount((__bridge CFTypeRef)self));
+    NSLog(@"dealloc");
+}
 @end
