@@ -11,6 +11,10 @@
 		AF04EBD02D3761BF00EB8CD8 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = AF04EBCF2D3761BF00EB8CD8 /* ViewController1.m */; };
 		AF04EBD32D3765E500EB8CD8 /* AView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF04EBD22D3765E500EB8CD8 /* AView.m */; };
 		AF04EBD62D3E3AD900EB8CD8 /* AObject.m in Sources */ = {isa = PBXBuildFile; fileRef = AF04EBD52D3E3AD900EB8CD8 /* AObject.m */; };
+		AF04EBD92D3F5C4B00EB8CD8 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = AF04EBD82D3F5C4B00EB8CD8 /* ViewController2.m */; };
+		AF04EBDC2D3F657A00EB8CD8 /* ViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = AF04EBDB2D3F657A00EB8CD8 /* ViewController3.m */; };
+		AF04EBDF2D3F65F600EB8CD8 /* ViewController4.m in Sources */ = {isa = PBXBuildFile; fileRef = AF04EBDE2D3F65F600EB8CD8 /* ViewController4.m */; };
+		AF04EBE22D40CF7800EB8CD8 /* AsubObject.m in Sources */ = {isa = PBXBuildFile; fileRef = AF04EBE12D40CF7800EB8CD8 /* AsubObject.m */; };
 		AFE434062D34DC370052AC3B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE434052D34DC370052AC3B /* AppDelegate.m */; };
 		AFE434092D34DC370052AC3B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE434082D34DC370052AC3B /* SceneDelegate.m */; };
 		AFE4340C2D34DC370052AC3B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE4340B2D34DC370052AC3B /* ViewController.m */; };
@@ -30,6 +34,14 @@
 		AF04EBD22D3765E500EB8CD8 /* AView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AView.m; sourceTree = "<group>"; };
 		AF04EBD42D3E3AD900EB8CD8 /* AObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AObject.h; sourceTree = "<group>"; };
 		AF04EBD52D3E3AD900EB8CD8 /* AObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AObject.m; sourceTree = "<group>"; };
+		AF04EBD72D3F5C4B00EB8CD8 /* ViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		AF04EBD82D3F5C4B00EB8CD8 /* ViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+		AF04EBDA2D3F657A00EB8CD8 /* ViewController3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController3.h; sourceTree = "<group>"; };
+		AF04EBDB2D3F657A00EB8CD8 /* ViewController3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController3.m; sourceTree = "<group>"; };
+		AF04EBDD2D3F65F600EB8CD8 /* ViewController4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController4.h; sourceTree = "<group>"; };
+		AF04EBDE2D3F65F600EB8CD8 /* ViewController4.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController4.m; sourceTree = "<group>"; };
+		AF04EBE02D40CF7800EB8CD8 /* AsubObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsubObject.h; sourceTree = "<group>"; };
+		AF04EBE12D40CF7800EB8CD8 /* AsubObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsubObject.m; sourceTree = "<group>"; };
 		AFE434012D34DC370052AC3B /* IOSNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE434042D34DC370052AC3B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AFE434052D34DC370052AC3B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -107,6 +119,14 @@
 				AF04EBD22D3765E500EB8CD8 /* AView.m */,
 				AF04EBD42D3E3AD900EB8CD8 /* AObject.h */,
 				AF04EBD52D3E3AD900EB8CD8 /* AObject.m */,
+				AF04EBE02D40CF7800EB8CD8 /* AsubObject.h */,
+				AF04EBE12D40CF7800EB8CD8 /* AsubObject.m */,
+				AF04EBD72D3F5C4B00EB8CD8 /* ViewController2.h */,
+				AF04EBD82D3F5C4B00EB8CD8 /* ViewController2.m */,
+				AF04EBDA2D3F657A00EB8CD8 /* ViewController3.h */,
+				AF04EBDB2D3F657A00EB8CD8 /* ViewController3.m */,
+				AF04EBDD2D3F65F600EB8CD8 /* ViewController4.h */,
+				AF04EBDE2D3F65F600EB8CD8 /* ViewController4.m */,
 			);
 			path = IOSNote;
 			sourceTree = "<group>";
@@ -238,7 +258,11 @@
 				AFE4340C2D34DC370052AC3B /* ViewController.m in Sources */,
 				AF04EBD02D3761BF00EB8CD8 /* ViewController1.m in Sources */,
 				AF04EBD32D3765E500EB8CD8 /* AView.m in Sources */,
+				AF04EBDC2D3F657A00EB8CD8 /* ViewController3.m in Sources */,
+				AF04EBE22D40CF7800EB8CD8 /* AsubObject.m in Sources */,
 				AF04EBD62D3E3AD900EB8CD8 /* AObject.m in Sources */,
+				AF04EBDF2D3F65F600EB8CD8 /* ViewController4.m in Sources */,
+				AF04EBD92D3F5C4B00EB8CD8 /* ViewController2.m in Sources */,
 				AFE434062D34DC370052AC3B /* AppDelegate.m in Sources */,
 				AFE434172D34DC3D0052AC3B /* main.m in Sources */,
 				AFE434092D34DC370052AC3B /* SceneDelegate.m in Sources */,

@@ -6,8 +6,13 @@
 //
 
 #import "AObject.h"
-
 @implementation AObject
+//@dynamic age;
+
++(void)initialize
+{
+    NSLog(@"initialize");
+}
 -(void)dealloc
 {
     NSLog(@"%@ %ld", self,CFGetRetainCount((__bridge CFTypeRef)self));

@@ -8,5 +8,8 @@
 #import "AsubObject.h"
 
 @implementation AsubObject
-
+//+(void)initialize
+//{
+//    NSLog(@"initialize1");
+//}
 @end
