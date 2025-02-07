@@ -30,7 +30,7 @@
  12. self和super的区别
  13. load方法与initialize方法调用的底层逻辑，时机，区别
  14. 关联对象底层原理
- 15. autoReleasePool底层原理
+ 15. autoReleasePool底层原理，gcd会自动配置autoReleasePool，NSThread不会自动配置autoReleasePool但是会走别的逻辑会走在main函数中的autoReleasePool
  
  **/
 
@@ -38,8 +38,25 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 //    [self test_NSError];
-    [self test_weak];
+//    [self test_weak];
  
+    [self block_byref];
+ 
+}
+ 
+-(void)block_byref{
+    AsubObject *a = [AsubObject new];
+      NSInteger obj = 0;
+    NSLog(@"%p",&obj);
+    void(^block)(void)=^(){
+        
+        NSLog(@"%p",&obj);
+    };
+    NSLog(@"%p",&obj);
+    block();
+    void(^block_strong)(void) = block;
+    NSLog(@"%p",&obj);
+    block_strong();
 }
 
 - (void)test_weak

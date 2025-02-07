@@ -16,11 +16,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self runloop];
+//    [self runloop];
+    NSLog(@"%@",[NSRunLoop currentRunLoop]);
 }
 
 -(void)runloop
 {
+//    NSRunLoop
+//    CFRunLoopRun()
+    NSObject *q = [[NSObject alloc] init];
     static CFRunLoopObserverRef observer;
     CFRunLoopRef runLoop = CFRunLoopGetCurrent();
     CFOptionFlags activities = kCFRunLoopAllActivities;

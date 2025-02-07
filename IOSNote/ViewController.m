@@ -68,6 +68,7 @@ static NSString *cellIdentfier = @"Cell";
 //    }
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+   
     return 80;
 }
 
@@ -87,6 +88,9 @@ static NSString *cellIdentfier = @"Cell";
  7. NSProxy
  8. 离屏渲染(allowsGroupOpacity)
  9. 内存布局
- app启动和优化
+ 10. 静态库，动态库和Framework的区别（假设一个静态库，库中有OC写的分类，但分类所属的类定义不在库中如NSString。
+ 在把这个静态库集成到工程里后，如果编译设置other linker flags没有添加-ObjC，那么在使用这个OC分类的方法时，就会在运行时奔溃: unrecognized selector sent to class ..
+ 解决办法：在编译设置other linker flags添加-ObjC）
+ 11.
  **/
 @end
